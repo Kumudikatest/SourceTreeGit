@@ -85,13 +85,13 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "bfb216c6-ce09-4802-9696-f717589f3eed"
+          "af4f81c9-b33a-4f0f-8a9d-6ff42be2ee9e"
         ],
         "isRemovable": true,
         "filePath": "SourceTreeGit/sub"
       },
-      "bfb216c6-ce09-4802-9696-f717589f3eed": {
-        "id": "bfb216c6-ce09-4802-9696-f717589f3eed",
+      "af4f81c9-b33a-4f0f-8a9d-6ff42be2ee9e": {
+        "id": "af4f81c9-b33a-4f0f-8a9d-6ff42be2ee9e",
         "parent": "f6fbce4e-cfcf-48c0-92bc-8407d4c4c47e",
         "name": "hiru",
         "type": "DIRECTORY",
@@ -108,7 +108,7 @@
       "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97",
       "7e3456fc-b643-41cc-9d27-8e9f4435f345"
     ],
-    "currentFileId": "7e3456fc-b643-41cc-9d27-8e9f4435f345",
+    "currentFileId": "94437543-9958-4019-bd12-68b35797b432",
     "resources": {
       "apigusEast1TestAPIMyLambdaget": {
         "name": "apigusEast1TestAPIMyLambdaget",
@@ -204,7 +204,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560850996701
+    "lastSave": 1560851165884
   },
   "VCS_STATE": {
     "provider": "GitHub",
