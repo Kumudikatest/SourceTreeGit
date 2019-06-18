@@ -61,13 +61,13 @@
       "7e3456fc-b643-41cc-9d27-8e9f4435f345": {
         "id": "7e3456fc-b643-41cc-9d27-8e9f4435f345",
         "parent": "edd136d0-86d8-470f-a8e0-17c5ba330faf",
-        "name": "Hiruadded.js",
+        "name": "Hiru.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "SourceTreeGit/Hiruadded.js",
-        "code": "exports.handler=function(event,context,callback){callback(null,{\"message\":\"Success\"});}",
+        "filePath": "SourceTreeGit/Hiru.js",
+        "code": "exports.handler=function(event,context,callback){callback(null,{\"message\":\"Successthisiseditedsorryichanged\"});}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
