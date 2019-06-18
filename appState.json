@@ -228,10 +228,10 @@
           "dev": true,
           "notRemovable": false
         },
-        "mysql": {
-          "name": "mysql",
-          "language": "javascript",
-          "version": "2.17.1"
+        "sql": {
+          "name": "sql",
+          "version": "0.78.0",
+          "language": "javascript"
         }
       }
     }
