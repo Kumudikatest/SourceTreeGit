@@ -108,9 +108,30 @@
         "name": "hirusub",
         "type": "DIRECTORY",
         "isDirectory": true,
-        "children": [],
+        "children": [
+          "ebd06fe2-39fa-4dca-9d1a-db4721139dc0"
+        ],
         "isRemovable": true,
         "filePath": "SourceTreeGit/sub/hiru/hirusub"
+      },
+      "ebd06fe2-39fa-4dca-9d1a-db4721139dc0": {
+        "id": "ebd06fe2-39fa-4dca-9d1a-db4721139dc0",
+        "parent": "56318107-302e-4298-8c20-e457eb1da523",
+        "name": "hirulambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SourceTreeGit/sub/hiru/hirusub/hirulambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
     "deletedFiles": [],
@@ -118,9 +139,10 @@
     "openFiles": [
       "94437543-9958-4019-bd12-68b35797b432",
       "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97",
-      "7e3456fc-b643-41cc-9d27-8e9f4435f345"
+      "7e3456fc-b643-41cc-9d27-8e9f4435f345",
+      "ebd06fe2-39fa-4dca-9d1a-db4721139dc0"
     ],
-    "currentFileId": "94437543-9958-4019-bd12-68b35797b432",
+    "currentFileId": "ebd06fe2-39fa-4dca-9d1a-db4721139dc0",
     "resources": {
       "apigusEast1TestAPIMyLambdaget": {
         "name": "apigusEast1TestAPIMyLambdaget",
@@ -216,7 +238,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560851328268
+    "lastSave": 1560851451695
   },
   "VCS_STATE": {
     "provider": "GitHub",
