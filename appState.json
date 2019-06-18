@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "94437543-9958-4019-bd12-68b35797b432"
+          "94437543-9958-4019-bd12-68b35797b432",
+          "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97"
         ],
         "isRemovable": false,
         "filePath": "SourceTreeGit"
@@ -22,7 +23,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "SourceTreeGit/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst ses = new AWS.SES();\n\nexports.handler = function (event, context, callback) {\n    ses.sendEmail({\n        Destination: {\n            ToAddresses: ['hirudinee@adroitlogic.com'],\n            CcAddresses: [],\n            BccAddresses: []\n        },\n        Message: {\n            Body: {\n                Text: {\n                    Data: 'Test Body'\n                }\n            },\n            Subject: {\n                Data: 'Test Subject'\n            }\n        },\n        Source: 'kumudika@adroitlogic.com',\n    }, function (err, data) {\n        if (err) console.log(err, err.stack); // an error occurred\n        else console.log(data);           // successful response\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS=require('aws-sdk');const ddb=new AWS.DynamoDB.DocumentClient();exports.handler=function(event,context,callback){ddb.put({TableName:'Test',Item:{'ID':1}}).promise().then((data)=>{console.log(data);}).catch((err)=>{console.log(err);});callback(null,{\"message\":\"Success\"});}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -36,12 +37,32 @@
             "config": {}
           }
         ]
+      },
+      "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97": {
+        "id": "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97",
+        "parent": "edd136d0-86d8-470f-a8e0-17c5ba330faf",
+        "name": "New.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SourceTreeGit/New.js",
+        "code": "exports.handler=function(event,context,callback){callback(null,{\"message\":\"Success\"});}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
     "deletedFiles": [],
     "rootNode": "edd136d0-86d8-470f-a8e0-17c5ba330faf",
     "openFiles": [
-      "94437543-9958-4019-bd12-68b35797b432"
+      "94437543-9958-4019-bd12-68b35797b432",
+      "8e56b876-3f4b-4e8e-ad5c-2b7f47468a97"
     ],
     "currentFileId": "94437543-9958-4019-bd12-68b35797b432",
     "resources": {
@@ -74,22 +95,35 @@
           "mode": 1
         }
       },
-      "ses-kumudika@adroitlogic.com": {
-        "name": "ses-kumudika@adroitlogic.com",
-        "type": "SES",
+      "ddbTest": {
+        "name": "ddbTest",
+        "type": "DynamoDB",
         "config": {
-          "selectedIdentity": "kumudika@adroitlogic.com",
-          "projectRegion": "us-east-1",
-          "params": {
-            "to": "hirudinee@adroitlogic.com",
-            "cc": "",
-            "bcc": "",
-            "subject": "Test Subject",
-            "body": {
-              "text": "Test Body",
-              "html": ""
-            }
-          }
+          "mode": 0,
+          "operation": "put",
+          "table": {
+            "arn": "",
+            "name": "Test",
+            "partitionKey": "ID",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "mode": 0
+          },
+          "parameters": {
+            "Key": {},
+            "Item": {
+              "ID": 1
+            },
+            "ExpressionAttributeValues": {}
+          },
+          "triggerParams": {},
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          },
+          "valid": true
         }
       }
     },
@@ -126,7 +160,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560845844420
+    "lastSave": 1560846709279
   },
   "VCS_STATE": {
     "provider": "GitHub",
