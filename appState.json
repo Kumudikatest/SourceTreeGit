@@ -96,9 +96,21 @@
         "name": "hiru",
         "type": "DIRECTORY",
         "isDirectory": true,
-        "children": [],
+        "children": [
+          "56318107-302e-4298-8c20-e457eb1da523"
+        ],
         "isRemovable": true,
         "filePath": "SourceTreeGit/sub/hiru"
+      },
+      "56318107-302e-4298-8c20-e457eb1da523": {
+        "id": "56318107-302e-4298-8c20-e457eb1da523",
+        "parent": "af4f81c9-b33a-4f0f-8a9d-6ff42be2ee9e",
+        "name": "hirusub",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SourceTreeGit/sub/hiru/hirusub"
       }
     },
     "deletedFiles": [],
@@ -204,7 +216,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560851165884
+    "lastSave": 1560851328268
   },
   "VCS_STATE": {
     "provider": "GitHub",
