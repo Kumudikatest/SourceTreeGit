@@ -1,1 +1,1 @@
-exports.handler=function(event,context,callback){callback(null,{"message":"Success"});}
+exports.handler=function(event,context,callback){callback(null,{"message":"S"});}
